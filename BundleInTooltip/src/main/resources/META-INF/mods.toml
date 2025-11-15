@@ -1,14 +1,17 @@
 modLoader="javafml"
 loaderVersion="[47,)"
 license="MIT"
-issueTrackerURL=""
+issueTrackerURL="https://github.com/dmor-me/BundleInTooltip/issues"
 
 [[mods]]
 modId="bundleintooltip"
 version="1.0.0"
 displayName="Bundle In Tooltip"
 authors="BundleInPalette"
-description='''Backports the Minecraft 1.21 bundle tooltip scrolling interaction to 1.20.1.'''
+description='''Backports the Minecraft 1.21 bundle tooltip scrolling interaction to 1.20.1.
+
+Source: https://github.com/dmor-me/BundleInTooltip
+'''
 
 [[dependencies.bundleintooltip]]
 modId="forge"
