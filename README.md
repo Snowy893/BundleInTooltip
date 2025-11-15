@@ -1,4 +1,4 @@
-# Bundle In Tooltip
+# Bundle In Tooltip (Forge 1.20.1)
 
 Backports the Minecraft 1.21 bundle tooltip interaction to Forge 1.20.1 so you can peek inside any bundle, scroll through its contents, and pull out the exact stack you want without dumping everything on the floor first.
 
