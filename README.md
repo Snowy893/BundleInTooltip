@@ -2,6 +2,10 @@
 
 Backports the Minecraft 1.21 bundle tooltip interaction to Forge 1.20.1 so you can peek inside any bundle, scroll through its contents, and pull out the exact stack you want without dumping everything on the floor first.
 
+<p align="center">
+  <img src="assets/BundleInTooltip.gif" width="50%">
+</p>
+
 ## Features
 - Works with vanilla bundles, dyed bundles from **Bundle In Palette**, and any other item in the `forge:bundles` tag.
 - Scroll on a bundle tooltip to highlight the stack you plan to grab.
@@ -30,3 +34,6 @@ Tips:
 
 ## Credits
 Created by **dmor-me**. Inspired by the official 1.21 bundle UX and designed to complement the dyed bundles from **Bundle In Palette**.
+<p align="center">
+  <img src="assets/BundleInTooltip.png" width="10%">
+</p>
