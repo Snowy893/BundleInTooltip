@@ -3,7 +3,7 @@
 Backports the Minecraft 1.21 bundle tooltip interaction to Forge 1.20.1 so you can peek inside any bundle, scroll through its contents, and pull out the exact stack you want without dumping everything on the floor first. Version **1.1.0** brings the full modern UI treatment, right down to the slot spacing, capacity bar facelift, and the optional selection banner.
 
 <p align="center">
-  <img src="assets/BundleInTooltip.gif" width="50%">
+  <img src="assets/BundleInTooltip 1.1.0.gif" width="50%">
 </p>
 
 ## Features
@@ -21,6 +21,22 @@ Backports the Minecraft 1.21 bundle tooltip interaction to Forge 1.20.1 so you c
 - Empty bundles now display the “Can hold a mixed stack of items” helper text with proper wrapping.
 - Controls fully match 1.21 behavior: carrying a bundle lets you pick up, swap, or deposit stacks without awkward dragging.
 
+<p align="center">
+  <img src="assets/Slots.gif" width="25%">
+</p>
+
+<div align="center">
+  SLOT TEXTURES
+</div>
+
+<p align="center">
+  <img src="assets/Capacity.gif" width="25%">
+</p>
+
+<div align="center">
+  CAPACITY BARS
+</div>
+
 ## Controls & Flow
 1. Hover your mouse over a bundle slot inside any inventory screen.
 2. The tooltip opens, showing the contents grid.
@@ -33,6 +49,11 @@ Tips:
 - The interaction ignores empty bundles automatically, so you won’t accidentally pull “air.”
 
 ## Configuration
+
+<p align="center">
+  <img src="assets/Configs.png" width="50%">
+</p>
+
 `bundleintooltip-client.toml` (created after first launch) exposes these client-side options. You can edit it by hand or use an in-game config editor such as **Configured** to tweak the settings without leaving Minecraft:
 
 - `tooltip.showCapacityBar` — choose whether the capacity display is the modern 1.21 bar (`true`, default) or the classic numeric fullness line (`false`).
