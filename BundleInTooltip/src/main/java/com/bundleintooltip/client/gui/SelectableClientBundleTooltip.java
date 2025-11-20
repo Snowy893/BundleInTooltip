@@ -222,13 +222,12 @@ public final class SelectableClientBundleTooltip implements ClientTooltipCompone
 
         int textWidth = font.width(text);
         int padding = 12;
-        int baseWidth = Math.min(this.displayWidth, contentWidth);
-        int barWidth = Math.max(baseWidth, textWidth + padding);
+        int barWidth = Math.max(40, textWidth + padding);
         int barX = x + contentWidth / 2 - barWidth / 2;
         int barY = y;
         int barHeight = 16;
         int outerBorder = 0xFF1C0A2E;
-        int border = 0xFF5F34A6;
+        int border = 0xFF2A1157;
         int background = 0xF011071B;
 
         graphics.pose().pushPose();
@@ -278,7 +277,8 @@ public final class SelectableClientBundleTooltip implements ClientTooltipCompone
     private boolean shouldRenderSelectionBar() {
         return BundleInTooltipConfig.showSelectionBar()
             && this.slotMode != BundleInTooltipConfig.SlotTextureMode.CLASSIC
-            && !this.items.isEmpty();
+            && !this.items.isEmpty()
+            && this.data.getSelectionIndex() >= 0;
     }
 
     private int horizontalSpacing() {
