@@ -1,0 +1,21 @@
+{
+  "bundleintooltip.tooltip.empty": "Empty",
+  "bundleintooltip.tooltip.full": "Full",
+  "bundleintooltip.tooltip.empty_hint.line1": "Can hold a mixed",
+  "bundleintooltip.tooltip.empty_hint.line2": "stack of items",
+  "bundleintooltip.tooltip.selection.none": "Scroll to select",
+  "bundleintooltip.tooltip.partial": "Filling",
+  "bundleintooltip.config.title": "Bundle In Tooltip Settings",
+  "bundleintooltip.config.show_bar": "Capacity Display",
+  "bundleintooltip.config.show_selection_bar": "Show Selection Preview",
+  "bundleintooltip.config.label_mode": "Capacity Bar Style",
+  "bundleintooltip.config.mode.none": "None",
+  "bundleintooltip.config.mode.vanilla": "Vanilla",
+  "bundleintooltip.config.mode.classic": "Classic",
+  "bundleintooltip.config.mode.hybrid": "Hybrid",
+  "bundleintooltip.config.mode.vanilla_revised": "Vanilla Revised",
+  "bundleintooltip.config.slot_style": "Slot Texture Style",
+  "bundleintooltip.config.slot_style.vanilla": "Vanilla",
+  "bundleintooltip.config.slot_style.experiment": "Experiment",
+  "bundleintooltip.config.slot_style.classic": "Classic"
+}

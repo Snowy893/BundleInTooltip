@@ -9,12 +9,14 @@ public final class SelectableBundleTooltip implements TooltipComponent {
     private final NonNullList<ItemStack> items;
     private final int weight;
     private final IntSupplier selectionSupplier;
+    private final int displayWidth;
 
-    public SelectableBundleTooltip(NonNullList<ItemStack> items, int weight, IntSupplier selectionSupplier) {
+    public SelectableBundleTooltip(NonNullList<ItemStack> items, int weight, IntSupplier selectionSupplier, int displayWidth) {
         this.items = NonNullList.create();
         this.items.addAll(items);
         this.weight = weight;
         this.selectionSupplier = selectionSupplier;
+        this.displayWidth = displayWidth;
     }
 
     public NonNullList<ItemStack> getItems() {
@@ -27,5 +29,9 @@ public final class SelectableBundleTooltip implements TooltipComponent {
 
     public int getSelectionIndex() {
         return this.selectionSupplier.getAsInt();
+    }
+
+    public int getDisplayWidth() {
+        return this.displayWidth;
     }
 }

@@ -24,9 +24,36 @@ public final class BundleInTooltipNetwork {
             .decoder(SelectBundleItemPacket::decode)
             .consumerMainThread(SelectBundleItemPacket::handle)
             .add();
+        CHANNEL.messageBuilder(StoreBundleItemPacket.class, 1, NetworkDirection.PLAY_TO_SERVER)
+            .encoder(StoreBundleItemPacket::encode)
+            .decoder(StoreBundleItemPacket::decode)
+            .consumerMainThread(StoreBundleItemPacket::handle)
+            .add();
+        CHANNEL.messageBuilder(DropBundleItemPacket.class, 2, NetworkDirection.PLAY_TO_SERVER)
+            .encoder(DropBundleItemPacket::encode)
+            .decoder(DropBundleItemPacket::decode)
+            .consumerMainThread(DropBundleItemPacket::handle)
+            .add();
+        CHANNEL.messageBuilder(SwapBundleItemPacket.class, 3, NetworkDirection.PLAY_TO_SERVER)
+            .encoder(SwapBundleItemPacket::encode)
+            .decoder(SwapBundleItemPacket::decode)
+            .consumerMainThread(SwapBundleItemPacket::handle)
+            .add();
     }
 
     public static void sendSelection(SelectBundleItemPacket packet) {
+        CHANNEL.sendToServer(packet);
+    }
+
+    public static void sendStore(StoreBundleItemPacket packet) {
+        CHANNEL.sendToServer(packet);
+    }
+
+    public static void sendDrop(DropBundleItemPacket packet) {
+        CHANNEL.sendToServer(packet);
+    }
+
+    public static void sendSwap(SwapBundleItemPacket packet) {
         CHANNEL.sendToServer(packet);
     }
 }

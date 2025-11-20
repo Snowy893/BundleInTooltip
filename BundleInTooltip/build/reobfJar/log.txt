@@ -136,7 +136,13 @@ Adding input to inheritance map
 Processing entries
 Conflicting propagated mapping for com/bundleintooltip/client/gui/SelectableClientBundleTooltip/renderImage(Lnet/minecraft/client/gui/Font;IILnet/minecraft/client/gui/GuiGraphics;)V from net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent/renderImage(Lnet/minecraft/client/gui/Font;IILnet/minecraft/client/gui/GuiGraphics;)V: renderImage -> m_183452_
 Conflicting propagated mapping for com/bundleintooltip/client/gui/SelectableClientBundleTooltip/getWidth(Lnet/minecraft/client/gui/Font;)I from net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent/getWidth(Lnet/minecraft/client/gui/Font;)I: getWidth -> m_142069_
+Conflicting propagated mapping for com/bundleintooltip/client/gui/BundleCapacityClientTooltip/renderImage(Lnet/minecraft/client/gui/Font;IILnet/minecraft/client/gui/GuiGraphics;)V from net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent/renderImage(Lnet/minecraft/client/gui/Font;IILnet/minecraft/client/gui/GuiGraphics;)V: renderImage -> m_183452_
+Conflicting propagated mapping for com/bundleintooltip/client/gui/BundleCapacityClientTooltip/getWidth(Lnet/minecraft/client/gui/Font;)I from net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent/getWidth(Lnet/minecraft/client/gui/Font;)I: getWidth -> m_142069_
+Conflicting propagated mapping for com/bundleintooltip/client/gui/BundleCapacityClientTooltip/getHeight()I from net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent/getHeight()I: getHeight -> m_142103_
 Conflicting propagated mapping for com/bundleintooltip/client/gui/SelectableClientBundleTooltip/getHeight()I from net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent/getHeight()I: getHeight -> m_142103_
+Conflicting propagated mapping for com/bundleintooltip/client/gui/BundleInTooltipConfigScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/Screen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
+Conflicting propagated mapping for com/bundleintooltip/client/gui/BundleInTooltipConfigScreen/onClose()V from net/minecraft/client/gui/screens/Screen/onClose()V: onClose -> m_7379_
+Conflicting propagated mapping for com/bundleintooltip/client/gui/BundleInTooltipConfigScreen/init()V from net/minecraft/client/gui/screens/Screen/init()V: init -> m_7856_
 Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
 Adding extras
 Sorting
@@ -144,6 +150,18 @@ Writing Output: C:\Users\dmorh\Documents\GitHub\BundleInTooltip\BundleInTooltip\
   META-INF/
   META-INF/MANIFEST.MF
   META-INF/mods.toml
+  assets/
+  assets/bundleintooltip/
+  assets/bundleintooltip/lang/
+  assets/bundleintooltip/lang/en_us.json
+  assets/bundleintooltip/textures/
+  assets/bundleintooltip/textures/gui/
+  assets/bundleintooltip/textures/gui/sprites/
+  assets/bundleintooltip/textures/gui/sprites/container/
+  assets/bundleintooltip/textures/gui/sprites/container/bundle/
+  assets/bundleintooltip/textures/gui/sprites/container/bundle/background.png
+  assets/bundleintooltip/textures/gui/sprites/container/bundle/blocked_slot.png
+  assets/bundleintooltip/textures/gui/sprites/container/bundle/slot.png
   com/
   com/bundleintooltip/
   com/bundleintooltip/BundleInTooltipMod.class
@@ -151,12 +169,26 @@ Writing Output: C:\Users\dmorh\Documents\GitHub\BundleInTooltip\BundleInTooltip\
   com/bundleintooltip/client/BundleInTooltipClient.class
   com/bundleintooltip/client/BundleSelectionTracker.class
   com/bundleintooltip/client/gui/
+  com/bundleintooltip/client/gui/BundleCapacityClientTooltip$1.class
+  com/bundleintooltip/client/gui/BundleCapacityClientTooltip.class
+  com/bundleintooltip/client/gui/BundleCapacityTooltip.class
+  com/bundleintooltip/client/gui/BundleInTooltipConfigScreen$1.class
+  com/bundleintooltip/client/gui/BundleInTooltipConfigScreen.class
   com/bundleintooltip/client/gui/SelectableBundleTooltip.class
+  com/bundleintooltip/client/gui/SelectableClientBundleTooltip$1.class
   com/bundleintooltip/client/gui/SelectableClientBundleTooltip$Texture.class
   com/bundleintooltip/client/gui/SelectableClientBundleTooltip.class
   com/bundleintooltip/common/
   com/bundleintooltip/common/BundleHelper.class
+  com/bundleintooltip/config/
+  com/bundleintooltip/config/BundleInTooltipConfig$CapacityLabelMode.class
+  com/bundleintooltip/config/BundleInTooltipConfig$Client.class
+  com/bundleintooltip/config/BundleInTooltipConfig$SlotTextureMode.class
+  com/bundleintooltip/config/BundleInTooltipConfig.class
   com/bundleintooltip/network/
   com/bundleintooltip/network/BundleInTooltipNetwork.class
+  com/bundleintooltip/network/DropBundleItemPacket.class
   com/bundleintooltip/network/SelectBundleItemPacket.class
+  com/bundleintooltip/network/StoreBundleItemPacket.class
+  com/bundleintooltip/network/SwapBundleItemPacket.class
   pack.mcmeta

@@ -23,6 +23,18 @@ Tips:
 - You can scroll even while the tooltip is partially off-screen; the last valid slot remains selected.
 - The interaction ignores empty bundles automatically, so you won’t accidentally pull “air.”
 
+## Configuration
+`bundleintooltip-client.toml` (created after first launch) exposes these client-side options:
+
+- `tooltip.showCapacityBar` — switch between the modern 1.21-style capacity bar and the classic numeric fullness line (`24/64`). Set it to `true` if you prefer the animated bar, or leave it `false` to keep the numbers.
+- `tooltip.capacityLabelMode` — controls what text appears inside the bar when it’s visible (defaults to `VANILLA`):
+  - `NONE`: leave the bar blank, just like the 1.21 snapshots.
+  - `VANILLA`: show the “Empty” / “Full” labels when appropriate.
+  - `CLASSIC`: show the classic `24/64` fullness number centered inside the bar.
+  - `HYBRID`: mixes both styles (Empty/Full labels at the extremes, numeric in between).
+  - `VANILLA_REVISED`: Empty / Filling / Full labels inspired by the preview UI.
+- `tooltip.slotTextureMode` — switch between the modern 1.21 slot sprites (`VANILLA`, default) and the older 1.20.1 grid (`CLASSIC`).
+
 ## Requirements
 - Minecraft **1.20.1**
 - Forge **47.3.0** or newer in the 1.20.1 line
