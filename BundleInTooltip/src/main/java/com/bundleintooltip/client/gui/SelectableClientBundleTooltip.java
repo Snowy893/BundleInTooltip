@@ -235,10 +235,10 @@ public final class SelectableClientBundleTooltip implements ClientTooltipCompone
         graphics.pose().translate(0, 0, 400);
         drawRoundedFrame(graphics, barX - 1, barY - 1, barWidth + 2, barHeight + 2, outerBorder);
         drawRoundedFrame(graphics, barX, barY, barWidth, barHeight, border);
+        fillCorners(graphics, barX, barY, barWidth, barHeight, border);
         int innerWidth = Math.max(0, barWidth - 2);
         int innerHeight = Math.max(0, barHeight - 2);
         drawRoundedPanel(graphics, barX + 1, barY + 1, innerWidth, innerHeight, background);
-        cutCorners(graphics, barX - 1, barY - 1, barWidth + 2, barHeight + 2);
         int textColor = 0xFFFFFFFF;
         int textX = barX + Math.max(4, (barWidth - textWidth) / 2);
         graphics.drawString(font, text, textX, barY + 4, textColor, false);
@@ -265,14 +265,14 @@ public final class SelectableClientBundleTooltip implements ClientTooltipCompone
         graphics.fill(x + width - 1, y + 1, x + width, y + height - 1, color);
     }
 
-    private static void cutCorners(GuiGraphics graphics, int x, int y, int width, int height) {
-        if (width <= 2 || height <= 2) {
+    private static void fillCorners(GuiGraphics graphics, int x, int y, int width, int height, int color) {
+        if (width <= 0 || height <= 0) {
             return;
         }
-        graphics.fill(x, y, x + 1, y + 1, 0x00000000);
-        graphics.fill(x + width - 1, y, x + width, y + 1, 0x00000000);
-        graphics.fill(x, y + height - 1, x + 1, y + height, 0x00000000);
-        graphics.fill(x + width - 1, y + height - 1, x + width, y + height, 0x00000000);
+        graphics.fill(x, y, x + 1, y + 1, color);
+        graphics.fill(x + width - 1, y, x + width, y + 1, color);
+        graphics.fill(x, y + height - 1, x + 1, y + height, color);
+        graphics.fill(x + width - 1, y + height - 1, x + width, y + height, color);
     }
 
     private boolean shouldRenderSelectionBar() {
